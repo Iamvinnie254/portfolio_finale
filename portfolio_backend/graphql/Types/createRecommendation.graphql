@@ -1,0 +1,30 @@
+type Recommendation {
+    id: ID!
+    name: String!
+    occupation: String!
+    company: String!
+    message: String!
+    github_link: String!
+    linkedin_link: String!
+    phone_number: String!
+    email: String!
+    image: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+input CreateRecommendationInput {
+    name: String!
+    occupation: String!
+    company: String!
+    message: String!
+    github_link: String!
+    linkedin_link: String!
+    phone_number: String!
+    email: String!
+    image: Upload!
+}
+
+type CreateRecommendationInputResponse {
+    message: String!
+    recommendation: Recommendation!
+}

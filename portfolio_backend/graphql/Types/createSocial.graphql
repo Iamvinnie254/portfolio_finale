@@ -1,0 +1,17 @@
+type Social {
+    id: ID!
+    name: String!
+    url: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+
+input CreateSocialInput {
+    name: String!
+    url: String!
+}
+
+type CreateSocialInputResponse {
+    message: String!
+    social: Social!
+}

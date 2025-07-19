@@ -1,0 +1,24 @@
+type Blog{
+    id: ID!
+    title: String!
+    image:String!
+    markdown: String!
+    tags:String!
+    url:String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+
+input CreateBlogInput{
+    title: String!
+    image:Upload!
+    markdown: String!
+    tags: String!
+    url: String!
+}
+
+type CreateBlogInputResponse{
+    message: String!
+    blog: Blog!
+
+}

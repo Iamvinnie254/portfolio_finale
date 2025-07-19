@@ -1,0 +1,6 @@
+extend type Mutation{
+    createSkill(input: CreateSkillInput! @spread): CreateSkillInputResponse!
+    @field(
+        resolver: "App\\GraphQL\\Mutations\\CreateSkillMutation@createSkill"
+    )
+}

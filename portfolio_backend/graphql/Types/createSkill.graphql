@@ -1,0 +1,16 @@
+type Skill {
+    id: ID!
+    skill_name:String!
+    icon: String! 
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+
+input CreateSkillInput {
+    skill_name:String!
+    icon: Upload
+}
+type CreateSkillInputResponse {
+    message: String!
+    skill: Skill!
+}

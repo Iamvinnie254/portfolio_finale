@@ -1,0 +1,6 @@
+extend type Mutation{
+    createBlog(input:CreateBlogInput! @spread): CreateBlogInputResponse!
+    @field(
+        resolver: "App\\GraphQL\\Mutations\\CreateBlogMutation@createBlog"
+    )
+}
