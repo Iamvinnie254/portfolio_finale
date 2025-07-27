@@ -18,7 +18,7 @@ class CreateBlogMutation
         $imagePath = null;
 
         if (isset($args['image'])) {
-            $imagePath = $args['image']->store('uploads/blog_images', 'public');
+            $imagePath = $args['image']->store('uploads/Blog_images', 'public');
         }
 
         $blog = Blog::create([

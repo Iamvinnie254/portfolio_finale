@@ -3813,16 +3813,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v6.62.0",
+            "version": "v6.62.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "03f3dab516904d15c81a798c6ac4923a57690288"
+                "reference": "f6cb9c828a2d877b862f24599652c2b06636df2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/03f3dab516904d15c81a798c6ac4923a57690288",
-                "reference": "03f3dab516904d15c81a798c6ac4923a57690288",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/f6cb9c828a2d877b862f24599652c2b06636df2b",
+                "reference": "f6cb9c828a2d877b862f24599652c2b06636df2b",
                 "shasum": ""
             },
             "require": {
@@ -3845,7 +3845,6 @@
             "require-dev": {
                 "algolia/algoliasearch-client-php": "^3",
                 "bensampo/laravel-enum": "^5 || ^6",
-                "dms/phpunit-arraysubset-asserts": "^0.4 || ^0.5 || dev-add-phpunit-11-support",
                 "ergebnis/composer-normalize": "^2.2.2",
                 "fakerphp/faker": "^1.21",
                 "google/protobuf": "^3.21",
@@ -3940,7 +3939,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2025-07-14T10:12:41+00:00"
+            "time": "2025-07-23T10:46:42+00:00"
         },
         {
             "name": "openspout/openspout",

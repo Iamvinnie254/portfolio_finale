@@ -1,5 +1,5 @@
 extend type Mutation {
-    createSocial(input: CreateSocialInput! @spread): CreateSocialInputResponse
+    createSocial(input: CreateSocialInput! @spread): CreateSocialMutationResponse
         @field(
             resolver: "App\\GraphQL\\Mutations\\CreateSocialMutation@createSocial"
         )

@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
 
 function App() {
   React.useEffect(() => {
@@ -14,7 +16,7 @@ function App() {
       offset: 100,
       duration: 900,
       easing: "ease-in-sine",
-      delay: 100,
+      delay: 10,
     });
     AOS.refresh();
   }, []);
@@ -28,6 +30,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blogs" element={<Blog />} />
           </Route>
         </Routes>
       </BrowserRouter>

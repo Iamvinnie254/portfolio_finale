@@ -1,0 +1,19 @@
+type UserDetail {
+    id: ID!
+    name:String
+    image: String
+    cv: String
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+
+input CreateUserDetailInput {
+    name:String
+    image: Upload
+    cv: Upload
+}
+
+type CreateUserDetailMutationResponse {
+    message: String!
+    userDetail: UserDetail
+}

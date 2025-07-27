@@ -10,7 +10,7 @@ input CreateSkillInput {
     skill_name:String!
     icon: Upload
 }
-type CreateSkillInputResponse {
+type CreateSkillMutationResponse {
     message: String!
     skill: Skill!
 }

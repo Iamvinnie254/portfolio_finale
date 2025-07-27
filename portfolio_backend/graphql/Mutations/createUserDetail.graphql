@@ -1,0 +1,6 @@
+extend type Mutation {
+    createUserDetail(input: createUserDetailInput! @spread): CreateUserDetailMutationResponse!
+        @field(
+            resolver: "App\\GraphQL\\Mutations\\CreateUserDetailMutation@createUserDetail"
+        )
+}

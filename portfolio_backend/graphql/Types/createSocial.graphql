@@ -11,7 +11,7 @@ input CreateSocialInput {
     url: String!
 }
 
-type CreateSocialInputResponse {
+type CreateSocialMutationResponse {
     message: String!
     social: Social!
 }

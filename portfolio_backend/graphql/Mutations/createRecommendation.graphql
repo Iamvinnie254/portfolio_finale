@@ -1,7 +1,7 @@
 extend type Mutation {
     createRecommendation(
         input: CreateRecommendationInput! @spread
-    ): CreateRecommendationInputResponse!
+    ): CreateRecommendationMutationResponse!
         @field(
             resolver: "App\\GraphQL\\Mutations\\CreateRecommendationMutation@createRecommendation"
         )

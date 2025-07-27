@@ -1,24 +1,23 @@
-type Blog{
+type Blog {
     id: ID!
     title: String!
-    image:String!
+    image: String!
     markdown: String!
-    tags:String!
-    url:String!
+    tags: String!
+    url: String!
     created_at: DateTime!
     updated_at: DateTime!
 }
 
-input CreateBlogInput{
+input CreateBlogInput {
     title: String!
-    image:Upload!
+    image: Upload!
     markdown: String!
     tags: String!
     url: String!
 }
 
-type CreateBlogInputResponse{
+type CreateBlogMutationResponse {
     message: String!
     blog: Blog!
-
 }

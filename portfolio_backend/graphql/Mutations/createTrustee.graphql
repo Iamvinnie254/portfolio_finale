@@ -1,0 +1,6 @@
+extend type Mutation{
+    createTrustee(input: CreateTrusteeInput! @spread): CreateTrusteeMutationResponse!
+    @field(
+        resolver:"App\\GraphQL\\Mutations\\CreateTrusteeMutation@createTrustee"
+    )
+}

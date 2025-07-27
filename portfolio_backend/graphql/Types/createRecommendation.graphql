@@ -24,7 +24,7 @@ input CreateRecommendationInput {
     image: Upload!
 }
 
-type CreateRecommendationInputResponse {
+type CreateRecommendationMutationResponse {
     message: String!
     recommendation: Recommendation!
 }

@@ -3,7 +3,8 @@ type Project {
     title: String!
     description: String!
     project_preview_image: String!
-    image_url: String! @field(resolver: "App\\GraphQL\\Resolvers\\ProjectResolver@imageUrl")
+    image_url: String!
+        @field(resolver: "App\\GraphQL\\Resolvers\\ProjectResolver@imageUrl")
     live_demo_url: String!
     source_code_url: String!
     tech_stack: String!
@@ -14,12 +15,13 @@ type Project {
 input CreateProjectInput {
     title: String!
     description: String!
-    image: Upload!
+    image: Upload
     live_demo_url: String!
     source_code_url: String!
     tech_stack: String!
 }
-type CreateProjectInputResponse {
+type CreateProjectMutationResponse {
     message: String!
     project: Project!
 }
+

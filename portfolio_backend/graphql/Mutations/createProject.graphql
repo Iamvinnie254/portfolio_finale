@@ -1,7 +1,7 @@
 type Mutation {
     createProject(
         input: CreateProjectInput! @spread
-    ): CreateProjectInputResponse!
+    ): CreateProjectMutationResponse!
         @field(
             resolver: "App\\GraphQL\\Mutations\\CreateProjectMutation@createProject"
         )

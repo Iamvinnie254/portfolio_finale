@@ -12,6 +12,10 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\FileUpload;
 
 class UserResource extends Resource
 {
@@ -23,7 +27,21 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                //
+                FileUpload::make('image')
+                    ->label('Image')
+                    ->image()
+                    ->imageEditor()
+                    ->directory('User_images')
+                    ->visibility('public') // Important: save to storage/app/public
+                    ->downloadable()
+                    ->previewable(),
+
+                FileUpload::make('cv')
+                    ->label('CV in PDF Format')
+                    ->directory('User_CV_Pdf')
+                    ->visibility('public') // Important: save to storage/app/public
+                    ->downloadable()
+                    ->previewable(),
             ]);
     }
 
