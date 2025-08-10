@@ -12,7 +12,7 @@ const Main = () => {
   };
   if (loading)
     return (
-      <p className="grid place-items-center text-4xl font-sans font-semibold min-h-[80vh]">
+      <p className="grid place-items-center text-4xl font-sans font-semibold min-h-[100vh]">
         Just a moment...
       </p>
     );

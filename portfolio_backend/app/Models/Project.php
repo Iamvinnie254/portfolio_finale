@@ -17,4 +17,10 @@ class Project extends Model
         'source_code_url',
         'tech_stack',
     ];
+
+
+    public function getProjectPreviewImageAttribute($value)
+    {
+        return $value ? asset('storage/' . $value) : null;
+    }
 }

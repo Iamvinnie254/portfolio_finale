@@ -1,3 +1,3 @@
 extend type Query {
-    project: [Project!]! @paginate(defaultCount: 10)
+    projects: [Project!]! @all
 }
